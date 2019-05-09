@@ -149,36 +149,6 @@ time                 mean
 [...]
 ```
 
-
-## How to Reproduce this Experiment ##
-
-The was a highly interesting article on the [Machine Learning Reproducibility crisis] lately, which discussed the 
-problem of reproducing the results of Machine Learning papers. It's something I also felt long time ago, that's 
-why you will always be able to reproduce the examples I share in this blog.
-
-It's probably best to add a section on how to reproduce this article and use the example.
-
-### Database ###
-
-#### Creating a User ####
-
-Create the user ``philipp`` for connecting to the databases:
-
-```
-postgres=# CREATE USER philipp WITH PASSWORD 'test_pwd';
-CREATE ROLE
-```
-
-Then we can create the test database ``sampledb`` and set the owner to ``philipp``:
-
-```
-postgres=# CREATE DATABASE sampledb WITH OWNER philipp; 
-```
-Download the file ``QCLCD201503.zip`` from:
-
-* [http://www.ncdc.noaa.gov/orders/qclcd/](http://www.ncdc.noaa.gov/orders/qclcd/)
-
-
 [WeatherDataStreamingExample.java]: https://github.com/bytefish/PostgresTimeseriesAnalysis/blob/master/PostgresTimeseriesAnalysis/src/main/java/app/WeatherDataStreamingExample.java
 [jOOQ]: https://www.jooq.org/
 [Using IGNORE NULLS With SQL Window Functions to Fill Gaps]: https://blog.jooq.org/2019/04/24/using-ignore-nulls-with-sql-window-functions-to-fill-gaps/
