@@ -72,7 +72,7 @@ public class WeatherDataStreamingExample {
                     }, x -> System.err.println(x));
 
             // Probably not neccessary, but dispose anyway:
-            if (disposable.isDisposed()) {
+            if (!disposable.isDisposed()) {
                 disposable.dispose();
             }
         }
